@@ -4,6 +4,8 @@ By default, Teamcity does not pick up coverage information if you have Simplecov
 
 ![See your coverage results in TeamCity](https://raw.github.com/benc/simplecov-teamcity-summary/master/img/coverage_results.png)
 
+![Get overall coverage statistics](https://raw.github.com/benc/simplecov-teamcity-summary/master/img/coverage_chart.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
