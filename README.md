@@ -1,8 +1,12 @@
 # Simplecov::TeamcitySummary
 
-By default, Teamcity does not pick up coverage information if you have Simplecov configured for your test suite. The Simplecov::TeamcitySummary formatter is an easy way to add these stats to your Teamcity build:
+By default, Teamcity does not pick up coverage information if you have Simplecov configured for your test suite. The Simplecov::TeamcitySummary formatter is an easy way to add these stats to your Teamcity build.
+
+Per build:
 
 ![See your coverage results in TeamCity](https://raw.github.com/benc/simplecov-teamcity-summary/master/img/coverage_results.png)
+
+Overall coverage statistics:
 
 ![Get overall coverage statistics](https://raw.github.com/benc/simplecov-teamcity-summary/master/img/coverage_chart.png)
 
