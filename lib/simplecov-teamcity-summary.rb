@@ -1,0 +1,1 @@
+require 'simplecov-teamcity-summary/formatter'
