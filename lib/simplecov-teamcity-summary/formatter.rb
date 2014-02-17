@@ -1,5 +1,3 @@
-require 'simplecov'
-
 module Simplecov::Formatter
   class TeamcitySummaryFormatter
     def format(simplecov_results)
