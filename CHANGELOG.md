@@ -3,11 +3,11 @@ v0.1.1
 
 Bugfixes:
 
-* Simplecov is actually spelled SimpleCov, the namespace is changed to minimize confusion. Make sure you change your configuration from
+* Simplecov is actually spelled SimpleCov, the namespace is changed to minimize confusion. Make sure you change your configuration from:
 
-        SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
+        Simplecov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
   
-  to
+  to:
   
         SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
         
