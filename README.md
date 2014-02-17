@@ -10,6 +10,10 @@ Overall coverage statistics:
 
 ![Get overall coverage statistics](https://raw.github.com/benc/simplecov-teamcity-summary/master/img/coverage_chart.png)
 
+With these statistics, you can trigger a build fail if coverage drops below a certain value:
+
+![Trigger build failure](https://raw.github.com/benc/simplecov-teamcity-summary/master/img/trigger_build_failure.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
