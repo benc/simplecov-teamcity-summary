@@ -16,17 +16,18 @@ With these statistics, you can trigger a build fail if coverage drops below a ce
 
 ## Installation
 
-Add this line to your application's Gemfile:
+* Make sure you're depending on SimpleCov v0.8 or greater.
+* Add this line to your application's Gemfile:
 
-    gem 'simplecov-teamcity-summary'
+        gem 'simplecov-teamcity-summary'
+        
+  And then execute:
 
-And then execute:
+        $ bundle
 
-    $ bundle
+* Or install it yourself as:
 
-Or install it yourself as:
-
-    $ gem install simplecov-teamcity-summary
+        $ gem install simplecov-teamcity-summary
 
 ## Configuration
 
