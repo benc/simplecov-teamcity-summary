@@ -1,4 +1,4 @@
-# Simplecov::TeamcitySummary
+# SimpleCov::TeamcitySummary
 
 By default, Teamcity [does not pick up coverage information for Simplecov reports](http://confluence.jetbrains.com/display/TCD8/Code+Coverage). This gem provides you with a quick and easy way to add these statistics to your Teamcity instance.
 
@@ -37,7 +37,7 @@ With these statistics, you can trigger a build fail if coverage drops below a ce
   require 'simplecov'
   SimpleCov.start do
     at_exit do
-      Simplecov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
+      SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
     end
   end
 ```
@@ -49,12 +49,12 @@ Create or edit a .simplecov file and include:
 ```ruby
   SimpleCov.profiles.define 'teamcity' do
     at_exit do
-      Simplecov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
+      SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
     end
   end
 ```
 
-Then, start your Simplecov instance like this:
+Then, start your SimpleCov instance like this:
 
 ```ruby
   require 'simplecov'
