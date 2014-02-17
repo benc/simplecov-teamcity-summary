@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Simplecov::Formatter::TeamcitySummaryFormatter do
+describe SimpleCov::Formatter::TeamcitySummaryFormatter do
   describe "#format" do
     before do 
       expect_any_instance_of(described_class).to receive(:format_teamcity).with(:arg).and_return(:return_value)
