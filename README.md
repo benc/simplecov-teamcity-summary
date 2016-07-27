@@ -38,8 +38,11 @@ With these statistics, you can trigger a build fail if coverage drops below a ce
 ```ruby
   require 'simplecov'
   SimpleCov.start do
-    at_exit do
-      SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
+    if ENV['TEAMCITY_VERSION']
+      at_exit do
+        SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result)
+        # SimpleCov.result.format! # uncomment for additional detailed HTML report for TeamCity artifacts
+      end
     end
   end
 ```
@@ -50,8 +53,11 @@ Create or edit a .simplecov file and include:
 
 ```ruby
   SimpleCov.profiles.define 'teamcity' do
-    at_exit do
-      SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result) if ENV['TEAMCITY_VERSION']
+    if ENV['TEAMCITY_VERSION']
+      at_exit do
+        SimpleCov::Formatter::TeamcitySummaryFormatter.new.format(SimpleCov.result)
+        # SimpleCov.result.format! # uncomment for additional detailed HTML report for TeamCity artifacts
+      end
     end
   end
 ```
