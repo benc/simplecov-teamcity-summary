@@ -1,3 +1,10 @@
+v0.1.3
+======
+
+Bugfixes:
+
+* [Removed CodeCoverageL, this is calculated by TeamCity](https://confluence.jetbrains.com/pages/viewpage.action?pageId=74845225#HowTo...-ImportcoverageresultsinTeamCity)
+
 v0.1.2
 ======
 
