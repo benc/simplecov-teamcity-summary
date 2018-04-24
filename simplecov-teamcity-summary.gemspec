@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = "simplecov-teamcity-summary"
   gem.version       = SimpleCov::TeamcitySummary::VERSION
   gem.authors       = ["Ben Cochez"]
-  gem.email         = ["ben@cochezconsult.be"]
+  gem.email         = ["ben@cochez.consulting"]
   gem.description   = "Simplecov formatter that prints coverage summary information to display in TeamCity."
   gem.summary       = gem.description
   gem.homepage      = "https://github.com/benc/simplecov-teamcity-summary"
