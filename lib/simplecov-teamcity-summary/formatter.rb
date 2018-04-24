@@ -15,7 +15,6 @@ module SimpleCov::Formatter
       <<-eos
 
 ##teamcity[blockOpened name='Code Coverage Summary']
-##teamcity[buildStatisticValue key='CodeCoverageL' value='#{simplecov_results.covered_percent}']
 ##teamcity[buildStatisticValue key='CodeCoverageAbsLCovered' value='#{simplecov_results.covered_lines}']
 ##teamcity[buildStatisticValue key='CodeCoverageAbsLTotal' value='#{simplecov_results.total_lines}']
 ##teamcity[blockClosed name='Code Coverage Summary']
