@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/simplecov-teamcity-summary.svg)](http://badge.fury.io/rb/simplecov-teamcity-summary)
 
-By default, Teamcity [does not pick up coverage information for SimpleCov reports](https://confluence.jetbrains.com/display/TCD9/Code+Coveragee). This gem provides you with a quick and easy way to add these statistics to your Teamcity instance.
+By default, Teamcity [does not pick up coverage information for SimpleCov reports](https://confluence.jetbrains.com/display/TCD9/Code+Coverage). This gem provides you with a quick and easy way to add these statistics to your Teamcity instance.
 
 Per build:
 
